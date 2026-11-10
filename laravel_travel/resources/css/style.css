@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #003580; 
+    --accent-color: #0071c2;
+    --success-color: #008009;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.navbar-custom {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #fff !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffb700 !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 53, 128, 0.75), rgba(0, 113, 194, 0.75)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    border-radius: 0 0 25px 25px;
+}
+
+
+.travel-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.travel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.travel-card img {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.travel-card:hover img {
+    transform: scale(1.05);
+}
+
+.price-tag {
+    color: var(--success-color);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+
+.navbar-nav .btn-warning:hover {
+    color: #151515 !important; 
+    background-color: #ffc004 !important; 
+}
